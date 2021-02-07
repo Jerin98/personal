@@ -1,0 +1,16 @@
+<div class="centered-content">
+    <div class="modal-box">
+      <h1 class="title">
+        Create a new timetable
+      </h1>
+  
+      <input #timetableTitleInput class="input has-background-light is-medium" type="text" placeholder="Enter new timetable...">
+      <br><br>
+      <div class="buttons is-right">
+        <button class="button is-medium" routerLink="/timetables">Cancel</button>
+        <button class="button is-danger has-text-black is-medium" (click)="createTimetable(timetableTitleInput.value)" routerLink="/timetables">Create</button>
+      </div>
+ 
+      
+    </div>
+  </div>
